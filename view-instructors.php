@@ -17,7 +17,7 @@ while ($instructor = $instructors->fetch_assoc()) {
     <td><?php echo $instructor['Instructor_id']; ?></td>
     <td><?php echo $instructor['Instructor_name']; ?></td>
     <td><?php echo $instructor['office_number']; ?></td>
-    <td><a href = "courses-by-instructor.php?id=<?php echo $instructor['Instructor_id']; ?>">Courses</td>
+    <td><a href = "courses-by-instructor.php?id=<?php echo $instructor['Instructor_id']; ?>">Courses</a></td>
   </tr>
 <?php
 }
