@@ -23,7 +23,7 @@
           <a class="nav-link" href="instructors.php">Instructors</a>
         </li>
                 <li class="nav-item">
-          <a class="nav-link" href="Courses.php">Coursest</a>
+          <a class="nav-link" href="Courses.php">Courses</a>
         </li>
                 <li class="nav-item">
           <a class="nav-link" href="instructors-with-courses.php">Instructors with courses</a>
