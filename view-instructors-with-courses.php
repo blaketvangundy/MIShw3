@@ -8,13 +8,16 @@ while ($instructor = $instructors->fetch_assoc()) {
     <div class="card-body">
       <h5 class="card-title"><?php echo $instructor['Instructor_name']; ?></h5>
       <p class="card-text">
+<ul class="list-group">
 <?php
   $courses = selectCoursesByInstructor($instructor['Instructor_id']);
   While ($course = $courses->fetch_assoc()) {
  ?>
+      <li class="list-group-item"><?php echo $course['course_number']; ?> - <?php echo $course['semester']; ?> - <?php echo $course['room']; ?> - <?php echo $course['day_time']; ?></li>
 <?php
   }
 ?>
+</ul>
       </p>
       <p class="card-text"><small class="text-body-secondary">Office: <?php echo $instructor['office_number']; ?></p>
     </div>
